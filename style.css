@@ -1,0 +1,205 @@
+/* Global styles */
+html, body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Table styles */
+  .my-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .my-table th {
+    background-color: #e2e2e2;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .my-table td {
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .my-table td:first-child {
+    width: 50px;
+  }
+  
+  .my-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Container */
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Cell indicator */
+  #current-cell {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Text styling buttons */
+  #bold-btn,
+  #italics-btn,
+  #underline-btn {
+    font-weight: bold;
+  }
+  
+  #italics-btn {
+    font-style: italic;
+    text-decoration: none;
+  }
+  
+  #underline-btn {
+    text-decoration: underline;
+  }
+  
+  /* Text color and background color inputs */
+  label[for="text-color"],
+  label[for="bg-color"] {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="color"] {
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Alignment buttons */
+  #left-align,
+  #center-align,
+  #right-align {
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  /* Font size and font family dropdowns */
+  #font-size,
+  #font-family {
+    margin-right: 10px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    background-color: #f8f9fa;
+  }
+  
+  /* Clipboard buttons */
+  #cut-btn,
+  #copy-btn,
+  #paste-btn {
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  /* Download button */
+  button[onclick="downloadJson()"] {
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  /* Add Sheet button */
+  #add-sheet-btn {
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  /* Sheet buttons */
+  #sheet-1,
+  #sheet-2,
+  #sheet-3 {
+    font-weight: bold;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  #bold-btn,
+  #italics-btn,
+  #underline-btn,
+  #left-align,
+  #center-align,
+  #right-align,
+  #cut-btn,
+  #copy-btn,
+  #paste-btn,
+  #add-sheet-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #202124;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 28px;
+    margin-right: 5px;
+    min-width: 28px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  #bold-btn:hover,
+  #italics-btn:hover,
+  #underline-btn:hover,
+  #left-align:hover,
+  #center-align:hover,
+  #right-align:hover,
+  #cut-btn:hover,
+  #copy-btn:hover,
+  #paste-btn:hover,
+  #add-sheet-btn:hover {
+    background-color: #f1f3f4;
+    border-color: #bdc1c6;
+  }
+  
+  #bold-btn:active,
+  #italics-btn:active,
+  #underline-btn:active,
+  #left-align:active,
+  #center-align:active,
+  #right-align:active,
+  #cut-btn:active,
+  #copy-btn:active,
+  #paste-btn:active,
+  #add-sheet-btn:active {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
